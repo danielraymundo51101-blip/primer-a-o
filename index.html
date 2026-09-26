@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para el amor de mi vida</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Pantalla de Bienvenida / Cortina Inicial -->
+    <div id="cortina-bienvenida" class="cortina">
+        <div class="contenido-cortina">
+            <h1>PERDONAME, POR TODAS LAS COSAS MALAS QUE TE E ECHO PASAR,
+                POR LOS DIAS AMARGOS QUE AGUANTAS.
+                MEJORARE Y TE OFRECE LOMEJOR, ERES TODO PARA MI💖</h1>
+            <p>Haz clic para abrir tu regalo</p>
+            <button id="btn-abrir" class="btn-corazon">Abrir Sorpresa ✨</button>
+        </div>
+    </div>
+
+    <!-- Elemento de Audio con tu archivo 'monaco.mpeg' -->
+    <audio id="musica-fondo" loop>
+        <source src="monaco.mpeg" type="audio/mpeg">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+
+    <!-- Tarjeta Principal con el Contenido -->
+    <div class="card-amor">
+        <!-- Columna Izquierda: Mensaje, Contador y Botón de Música -->
+        <div class="contenido-texto">
+            <h2>PARA EL AMOR DE MI VIDA:</h2>
+            <p class="mensaje">
+                Si pudiera elegir un lugar seguro, sería a tu lado. 
+                Sabias que no era facil estar conmigo,
+                y te quedaste sin inportar nada, Me as amado
+                una y otra vez y te aseguro que are cada esfuerzo 
+                que as echo por mi valga la pena.
+                GRACIAS POR TODO SOY MUY FELIZ SI ESTAS EN MI VIDA
+                Y EN MIS DIAS. NO SABES CUANTO TE QUIERO
+                MI SOLECITO
+            </p>
+
+            <div class="contador-seccion">
+                <span class="corazon-icono">❤️</span>
+                <p class="subtitulo-tiempo">Mi amor por ti comenzó hace...</p>
+                <div id="contador" class="tiempo-numeros">
+                    <span id="dias">0</span> días 
+                    <span id="horas">0</span> horas 
+                    <span id="minutos">0</span> minutos 
+                    <span id="segundos">0</span> segundos
+                </div>
+            </div>
+
+            <!-- Botón PRIMER AÑO para reproducir música -->
+            <div class="seccion-musica">
+                <button id="btn-musica" class="btn-primer-ano">🎵 PRIMER AÑO</button>
+            </div>
+        </div>
+
+        <!-- Columna Derecha: Foto Personalizada -->
+        <div class="contenido-grafico">
+            <div class="marco-foto">
+                <img src="foto.jpeg" alt="Nuestra foto" class="foto-romantica">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
