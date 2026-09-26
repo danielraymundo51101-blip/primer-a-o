@@ -1,0 +1,181 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #E8DFF5; /* Fondo general en tono lila muy suave */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Estilos de la Cortina de Bienvenida */
+.cortina {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #B5838D, #E5989B);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    transition: transform 0.8s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.cortina.abrir {
+    transform: translateY(-100%);
+}
+
+.contenido-cortina {
+    text-align: center;
+    color: white;
+}
+
+.contenido-cortina h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.contenido-cortina p {
+    font-size: 18px;
+    margin-bottom: 25px;
+    opacity: 0.9;
+}
+
+.btn-corazon {
+    background-color: #FFFDF9;
+    color: #B5838D;
+    border: none;
+    padding: 12px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.btn-corazon:hover {
+    transform: scale(1.05);
+    background-color: #FFF;
+}
+
+/* Tarjeta Principal con Color Lila Elegante y Visible */
+.card-amor {
+    background-color: #F3EAF8; /* Tono lila pastel cálido y claro para el recuadro */
+    width: 850px;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(90, 70, 110, 0.15);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #E2D1F0;
+}
+
+.contenido-texto {
+    flex: 1;
+    padding-right: 25px;
+}
+
+.contenido-texto h2 {
+    color: #4A306D; /* Tono lila oscuro/morado para gran contraste */
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.mensaje {
+    color: #3D2C53; /* Texto oscuro bien legible sobre lila */
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.contador-seccion {
+    border-top: 1px solid #D4BEE4;
+    padding-top: 15px;
+    margin-bottom: 20px;
+}
+
+.corazon-icono {
+    font-size: 14px;
+}
+
+.subtitulo-tiempo {
+    font-size: 14px;
+    color: #6B5B7B; /* Gris violáceo visible */
+    margin: 5px 0;
+}
+
+.tiempo-numeros {
+    font-size: 16px;
+    font-weight: 600;
+    color: #4A306D;
+}
+
+.tiempo-numeros span {
+    font-size: 20px;
+    color: #9B2226; /* Rojo elegante para los números */
+}
+
+/* Estilo del Botón PRIMER AÑO */
+.seccion-musica {
+    margin-top: 10px;
+}
+
+.btn-primer-ano {
+    background-color: #8D6B94; /* Lila rosado oscuro para el botón */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(141, 107, 148, 0.3);
+    transition: all 0.2s ease;
+}
+
+.btn-primer-ano:hover {
+    background-color: #724E79;
+    transform: scale(1.05);
+}
+
+.btn-primer-ano.reproduciendo {
+    background-color: #4CAF50;
+    box-shadow: 0 4px 10px rgba(76, 175, 80, 0.3);
+}
+
+/* Estilo del Marco de la Foto (Columna Derecha) */
+.contenido-grafico {
+    width: 270px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.marco-foto {
+    background: white;
+    padding: 10px 10px 25px 10px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(90, 70, 110, 0.15);
+    transform: rotate(2deg);
+    transition: transform 0.3s ease;
+}
+
+.marco-foto:hover {
+    transform: rotate(0deg) scale(1.02);
+}
+
+.foto-romantica {
+    width: 220px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 6px;
+    display: block;
+}
